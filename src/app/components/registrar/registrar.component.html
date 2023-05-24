@@ -1,1 +1,32 @@
-<p>registrar works!</p>
+<div class="container">
+    <div class="form-container">
+      <h2>Formulario de Registro</h2>
+      <form (ngSubmit)="registrar()">
+        <mat-form-field class="form-field">
+          <mat-label>Nombre</mat-label>
+          <input matInput [(ngModel)]="nombre" name="nombre" required placeholder="Ingrese su nombre">
+        </mat-form-field>
+        
+        <mat-form-field class="form-field">
+          <mat-label>Apellido</mat-label>
+          <input matInput [(ngModel)]="apellido" name="apellido" required placeholder="Ingrese su apellido">
+        </mat-form-field>
+        
+        <mat-form-field class="form-field">
+          <mat-label>Edad</mat-label>
+          <input matInput [(ngModel)]="edad" name="edad" required placeholder="Ingrese su edad">
+        </mat-form-field>
+        
+        <mat-form-field class="form-field">
+          <mat-label>Cédula</mat-label>
+          <input matInput [(ngModel)]="cedula" name="cedula" required placeholder="Ingrese su cedula">
+        </mat-form-field>
+        
+        <div class="button-container">
+          <button mat-raised-button color="primary" class="cancel-button">Cancelar</button>
+          <button mat-raised-button color="primary" type="submit" class="register-button">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

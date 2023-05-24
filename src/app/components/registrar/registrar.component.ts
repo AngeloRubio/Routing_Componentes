@@ -7,14 +7,16 @@ import { Component } from '@angular/core';
 })
 export class RegistrarComponent {
   nombre: string = '';
-  apellido = '';
-  edad = '';
-  cedula = '';
+  apellido: string = '';
+  edad: string = '';
+  cedula: string = '';
 
   registrar() {
     console.log('Datos registrados:', {
       nombre: this.nombre,
       apellido: this.apellido,
+      edad: this.edad,
+      cedula: this.cedula
     });
   }
 }
