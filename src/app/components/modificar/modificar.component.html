@@ -1,1 +1,31 @@
-<p>modificar works!</p>
+<div class="container">
+    <div class="form-container">
+        <mat-form-field class="form-field">
+            <mat-label>Nombre</mat-label>
+            <input matInput [(ngModel)]="nombre" name="nombre" required placeholder="Ingrese su nombre" />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+            <mat-label>Apellido</mat-label>
+            <input matInput [(ngModel)]="apellido" name="apellido" required placeholder="Ingrese su apellido" />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+            <mat-label>CorreoElectronico</mat-label>
+            <input matInput [(ngModel)]="correoElectronico" name="correoElectronico" required placeholder="Ingrese su correoElectronico" />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+            <mat-label>Cédula</mat-label>
+            <input matInput [(ngModel)]="cedula" name="cedula" required placeholder="Ingrese su cedula" />
+        </mat-form-field>
+
+        <div class="button-container">
+            <button mat-raised-button color="primary" (click)="editar()">
+                Cancelar
+            </button>
+            <div class="button-spacing"></div>
+            <button mat-raised-button color="warn">Guardar Cambios</button>
+        </div>
+    </div>
+</div>

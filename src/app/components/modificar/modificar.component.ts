@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./modificar.component.css']
 })
 export class ModificarComponent {
+  searchQuery: string = '';
 
+  editar() {
+    // Lógica para editar el formulario
+  }
+
+  nombre: string = '';
+  apellido: string = '';
+  correoElectronico: string = '';
+  cedula: string = '';
+
+  onSearchInputChange(value: string) {
+    this.searchQuery = value;
+
+  }
 }

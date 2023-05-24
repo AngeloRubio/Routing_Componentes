@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'registrar',
     component: RegistrarComponent,
   },
+  {
+    path: '',
+    component: RegistrarComponent,
+  },
 
 ];
 
